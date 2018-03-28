@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+
+		<title>Who's the (wo)Man?</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="Scarlett Tacon" />
+		<meta name="copyright" content="Copyright 2018 Scarlett Tacon" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" >
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("a").on('click', function(event) {
+
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+
+
+	</head>
+
+	<body>
+				
+				
+				
+
+						<section id="#home" class="hero">
+
+							<div class="scrim">
+
+								<h2>WHO'S THE (WO)MAN?</h2>
+							</div>
+						</section>
+					
+						<ul>
+						  <li><a class="active" href="#overview">Overview</a></li>
+						  <li><a href="#description">Description</a></li>
+
+						  <li><a href="#wireframes">Wire Frames</a></li>
+						</ul>
+							
+		
+		
+				
+
+				        <section id="overview" class="body-section">
+
+							
+							<h2> Overview </h2>
+				            	<p>
+
+				                I decided to work with the Womens’ Suffrage real life proposal to create a basis for my app. That was the subject that I found the most interest in and what I felt would also help inspire an original idea as that concept hasn’t been played around with much. I thought about the categories of people who would be the most interested in the Womens’ Suffrage movement and I originally thought of targeting youth women because from my perspective I’m currently seeing a lot of young women wanting to take action and learn and make a difference. But then I thought, rather than making an app for people who are already interested and educated, why not make an app to educate people and get them interested. That’s why I decided to create an app that is a learning tool that teachers can use to teach their students about gender equality and the Womens’ Suffrage movement in New Zealand.
+
+				            	</p>
+				        </section>
+
+
+
+		
+		       			<section id="description" class="body-section">
+
+			
+							<h2> Full Description </h2>
+
+					           		<p>
+
+					                The concept of the app is an interactive experience learning tool for children/primary schools to learn about gender equality and the Womens’ Suffrage movement in New Zealand. Teachers and Students have their own separate logins where the teachers have more control over the admin and editing and the students only have viewing privileges. There are three main pages on the app:
+								
+					           		</p>
+									
+									<p> - 	The first one is the Home Page where the teacher can post announcements about tasks and projects that are to be completed and when new quizzes become unlocked, and students can also post any questions they have that both other students and the teacher can answer. </p>
+									<p> -	The interactive stories are the key feature of the app. This is what teaches the students about the history of the movement and gender equality. The interactive stories run through a map of New Zealand. In each episode of the story it takes place in a different location, and although there in general information in each episode, the episode will include information and facts specific to that area, and the names of women in that area who signed the petition. </p>
+									<p> -  Following the episodes, there are quizzes to be completed. These are comprehensive questions to make sure the students where involved in the episodes and can recount the information. After the quiz is over, the students will also have access to the correct answers and the teacher can ask the class to discuss certain events that happened within the episode. The quizzes are unlocked when the episodes are completed. It is good for the students to be able to download the app and run through the episodes and learn at their own pace. </p>
+									
+									<img width= "100%" src="images/interactions.jpg"> 
+
+       					</section>
+		
+		
+				        <section id="wireframes" class="body-section">
+
+									<iframe style="border: none;" width="100%" height="650" src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/JF9vZLOIsLyH4d6KQMDTEzqu/Who-s-the-wo-Man?scaling=contain&node-id=1%3A2" allowfullscreen></iframe>	
+		        		</section>
+
+	
+
+	</body>
+
+</html>
+
+
